@@ -26,7 +26,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .numbers__number {
   width: 40rem;
   height: 30rem;
@@ -36,8 +35,12 @@ body {
   align-items: center;
   border-radius: 1rem;
   box-shadow: inset 0 0 1rem 0.5rem rgba(255, 171, 225, 0.5);
+  transition: 0.2s;
 }
-
+.numbers__number:hover {
+  cursor: pointer;
+  background: #e1e1e1;
+}
 .numbers__h2 {
   font-size: 500%;
   font-family: "Open Sans", sans-serif;

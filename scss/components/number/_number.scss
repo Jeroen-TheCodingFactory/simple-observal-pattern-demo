@@ -1,26 +1,31 @@
 @use "../../abstracts/variables";
 
-.numbers{
-    display:flex;
+.numbers {
+    display: flex;
     flex-wrap: wrap;
-    gap:4rem;
+    gap: 4rem;
     justify-content: center;
     align-items: center;
-}
 
-.numbers__number{
-    width:40rem;
-    height:30rem;
-    background:variables.$numbersBackground;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    box-shadow: variables.$boxShadow;
+    &__number {
+        width: 40rem;
+        height: 30rem;
+        background: variables.$numbersBackground;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        box-shadow: variables.$boxShadow;
+        transition: 0.2s;
 
-}
+        &:hover {
+            cursor: pointer;
+            background: darken(variables.$numbersBackground, 5%);
+        }
+    }
 
-.numbers__h2{
-    font-size: 500%;
-    font-family: 'Open Sans', sans-serif;
+    &__h2 {
+        font-size: 500%;
+        font-family: 'Open Sans', sans-serif;
+    }
 }

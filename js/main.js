@@ -66,12 +66,7 @@ setInterval( () => {
     subscriber2.setState(number2);
 }, 1000)
 
-
-
-
-
-
-
+clearInterval
 
 
 
