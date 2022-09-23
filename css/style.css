@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#FFABE1, 70%, #937DC2);
+  padding: 4rem;
+  width: 100%;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.numbers__number {
+  width: 40rem;
+  height: 30rem;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 1rem 0.5rem rgba(255, 171, 225, 0.5);
+  transition: 0.2s;
+}
+.numbers__number:hover {
+  cursor: pointer;
+  background: #e1e1e1;
+}
+.numbers__h2 {
+  font-size: 500%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

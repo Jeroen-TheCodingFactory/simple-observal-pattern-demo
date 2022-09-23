@@ -1,0 +1,15 @@
+$bodyGradientVars: (
+    gradient__pink: #FFABE1,
+    gradient__purple: #937DC2,
+    gradient__percentage: 70%
+);
+
+$bodyGradient: linear-gradient(
+    map-get($bodyGradientVars, "gradient__pink"),
+    map-get($bodyGradientVars,"gradient__percentage"),
+    map-get($bodyGradientVars,"gradient__purple"),
+);
+
+$boxShadow: inset 0 0 1rem 0.5rem rgb(255, 171, 225,0.5);
+
+$numbersBackground: #eee;
