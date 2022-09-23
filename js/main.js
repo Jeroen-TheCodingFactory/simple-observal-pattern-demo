@@ -31,7 +31,10 @@ class Observer {
         this.subscriber = subscriber;
         this.subscriber.attach(this);
         this.htmlElementById = htmlElementById;
-        console.log(this.name + " original value is: " + this.subscriber.getState());
+        this.init();
+    }
+    init(){
+        this.render(this.subscriber.getState());
     }
     update(){
             this.render(this.subscriber.getState());
@@ -44,15 +47,14 @@ class Observer {
 let number = 0;
 let subscriber = new Subscriber(number);
 let observer = new Observer("Observer 1",subscriber,document.getElementById("js--h2--1"));
-let observer2 = new Observer("Observer 2",subscriber,document.getElementById("js--h2--2"));
+let observer5 = new Observer("Observer 5",subscriber,document.getElementById("js--h2--5"));
 let observer3 = new Observer("Observer 3",subscriber,document.getElementById("js--h2--3"));
 
 let number2 = 10;
 let subscriber2 = new Subscriber(number2);
+let observer2 = new Observer("Observer 2",subscriber2,document.getElementById("js--h2--2"));
 let observer4 = new Observer("Observer 4",subscriber2,document.getElementById("js--h2--4"));
-let observer5 = new Observer("Observer 5",subscriber2,document.getElementById("js--h2--5"));
 let observer6 = new Observer("Observer 6",subscriber2,document.getElementById("js--h2--6"));
-
 
 setInterval( () => {
     number += 1;

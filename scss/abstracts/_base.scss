@@ -1,0 +1,10 @@
+@use "./variables";
+
+body{
+    min-height: 100vh;
+    background: variables.$bodyGradient;
+    padding:4rem;
+    width:100%;
+}
+
+
