@@ -1,0 +1,7 @@
+@mixin getFlex($jc: center,  $ai:center, $fd: row , $fw: nowrap){
+    display:flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}

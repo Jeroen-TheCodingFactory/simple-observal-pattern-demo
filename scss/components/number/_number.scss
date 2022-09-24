@@ -1,19 +1,15 @@
 @use "../../abstracts/variables";
+@use "../../abstracts/mixins";
 
 .numbers {
-    display: flex;
-    flex-wrap: wrap;
     gap: 4rem;
-    justify-content: center;
-    align-items: center;
+    @include mixins.getFlex(center, center, row, wrap);
 
     &__number {
         width: 40rem;
         height: 30rem;
         background: variables.$numbersBackground;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include mixins.getFlex;
         border-radius: 1rem;
         box-shadow: variables.$boxShadow;
         transition: 0.2s;
